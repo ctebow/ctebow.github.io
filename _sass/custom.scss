@@ -1,0 +1,90 @@
+// ============================================================
+//  YOUR STYLES  —  everything here overrides the theme
+// ============================================================
+// The base theme (no-style-please) is deliberately tiny: monospace,
+// black on white, 640px column. Tweak the variables below, or write
+// plain CSS at the bottom. Saved changes rebuild automatically.
+
+$text:        #111;
+$background:  #fff;
+$muted:       #666;
+$accent:      #0b57d0;
+$max-width:   680px;
+
+body {
+  color: $text;
+  background-color: $background;
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.wrapper {
+  width: auto;
+  max-width: $max-width;
+  margin: 3rem auto;
+  padding: 0 1.25rem;
+}
+
+a { color: $accent; }
+a:hover { background: $accent; color: $background; }
+
+.site-header {
+  margin-bottom: 2rem;
+
+  .site-title {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 2rem;
+
+    a { color: $text; text-decoration: none; }
+    a:hover { background: none; text-decoration: underline; }
+  }
+
+  nav {
+    margin-top: .5rem;
+    .sep { color: $muted; }
+  }
+}
+
+.fine {
+  color: $muted;
+  font-size: .85rem;
+  margin: .2rem 0;
+}
+
+.listing {
+  list-style: none;
+  padding-left: 0;
+
+  li { margin-bottom: 1rem; }
+}
+
+img { max-width: 100%; height: auto; }
+
+pre, code { font-size: .9rem; }
+
+pre {
+  overflow-x: auto;
+  padding: .75rem;
+  background: #f6f6f6;
+  border: thin solid #ddd;
+}
+
+table { width: 100%; }
+th, td { padding: .3rem .5rem; text-align: left; }
+
+footer {
+  margin-top: 3rem;
+  font-size: .9rem;
+}
+
+// --- Dark mode: follows the reader's OS setting ---------------
+@media (prefers-color-scheme: dark) {
+  body { color: #e6e6e6; background-color: #111; }
+  .site-header .site-title a { color: #e6e6e6; }
+  a { color: #7aa7ff; }
+  a:hover { background: #7aa7ff; color: #111; }
+  .fine { color: #9a9a9a; }
+  pre { background: #1b1b1b; border-color: #333; }
+  table, th, td { border-color: #444; }
+}

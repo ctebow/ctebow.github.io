@@ -1,0 +1,12 @@
+<footer>
+  <hr />
+  <p>
+    {% if site.email %}<a href="mailto:{{ site.email }}">email</a>{% endif %}
+    {% if site.github_username %} · <a href="https://github.com/{{ site.github_username }}">github</a>{% endif %}
+    {% if site.linkedin_username %} · <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">linkedin</a>{% endif %}
+    {% if site.twitter_username %} · <a href="https://twitter.com/{{ site.twitter_username }}">twitter</a>{% endif %}
+    {% if site.scholar_url %} · <a href="{{ site.scholar_url }}">scholar</a>{% endif %}
+    {% if site.resume_url %} · <a href="{{ site.resume_url | relative_url }}">cv</a>{% endif %}
+  </p>
+  <p class="fine">© {{ site.time | date: "%Y" }} {{ site.author }}</p>
+</footer>

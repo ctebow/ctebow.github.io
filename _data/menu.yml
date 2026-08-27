@@ -1,0 +1,11 @@
+# The top nav. Add / remove / reorder entries — order here is order on screen.
+# `url` is relative to the site root; the baseurl is prepended automatically.
+entries:
+  - title: about
+    url: /about/
+  - title: projects
+    url: /projects/
+  - title: writing
+    url: /writing/
+  - title: cv
+    url: /assets/resume.pdf

@@ -1,0 +1,16 @@
+{%- comment -%}
+  Renders projects, newest first, featured ones first.
+  Pass limit to cap the count:  {% include project_list.html limit=3 %}
+{%- endcomment -%}
+{% assign items = site.projects | sort: "date" | reverse %}
+{% if include.featured_only %}{% assign items = items | where: "featured", true %}{% endif %}
+{% if include.limit %}{% assign items = items | slice: 0, include.limit %}{% endif %}
+<ul class="listing">
+  {% for p in items %}
+    <li>
+      <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+      {% if p.blurb %}<br /><span class="fine">{{ p.blurb }}</span>{% endif %}
+      {% if p.tags %}<br /><span class="fine">{{ p.tags | join: " · " }}</span>{% endif %}
+    </li>
+  {% endfor %}
+</ul>

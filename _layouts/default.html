@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+  {%- include head.html -%}
+  <body>
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <header class="site-header">
+          <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+          {% if site.tagline %}<p class="fine">{{ site.tagline }}</p>{% endif %}
+          {% include nav.html %}
+        </header>
+
+        {{ content }}
+
+        {% include footer.html %}
+      </div>
+    </main>
+  </body>
+</html>

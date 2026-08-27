@@ -1,0 +1,5 @@
+<nav>
+  {% for item in site.data.menu.entries %}
+    <a href="{{ item.url | relative_url }}">{{ item.title }}</a>{% unless forloop.last %} <span class="sep">/</span> {% endunless %}
+  {% endfor %}
+</nav>
