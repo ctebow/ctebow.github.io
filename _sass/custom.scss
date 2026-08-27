@@ -7,7 +7,7 @@ $max-width:   680px;
 body {
   color: $text;
   background-color: $background;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   line-height: 1.55;
 }
 
@@ -26,7 +26,7 @@ a:hover { background: $accent; color: $background; }
 
   .site-title {
     margin: 0;
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     line-height: 2rem;
 
     a { color: $text; text-decoration: none; }

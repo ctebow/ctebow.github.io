@@ -51,5 +51,3 @@ I presented a poster at the NASA Student Research Symposium in August 2026, whic
 I'm currently submitting a paper along with my advisor and research partner, which once submitted will be available here. 
 
 ### Comments and Improvements
-
-Honest retrospective — this reads well to anyone technical.
