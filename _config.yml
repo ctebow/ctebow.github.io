@@ -1,11 +1,7 @@
-# ============================================================
-#  SITE SETTINGS  —  edit these, then restart `jekyll serve`
-# ============================================================
-# NOTE: _config.yml is the ONE file that does not hot-reload.
-# Change it -> stop the server (Ctrl-C) -> start it again.
+
 
 title: Caden Tebow
-tagline: Portfolio                    # shown under your name on the home page
+tagline: University of Chicago - B.S Physics & Computer Science
 author: Caden Tebow
 email: ctebow@uchicago.edu
 description: >-
@@ -19,23 +15,17 @@ description: >-
 url: "https://ctebow.github.io"
 baseurl: ""
 
-# --- Social / contact links -----------------------------------
-# Anything you leave blank is silently skipped in the footer.
 github_username: ctebow
-linkedin_username:
+linkedin_username: 
 twitter_username:
 scholar_url:
 resume_url: "/assets/resume.pdf"      # drop your PDF at assets/resume.pdf
 
 # favicon: "assets/img/favicon.png"   # uncomment once you drop a file there
-
-# ============================================================
-#  BUILD SETTINGS  —  you rarely need to touch below here
-# ============================================================
 theme: no-style-please
 
 theme_config:
-  back_home_text: ".."                # link text back to home on posts
+  back_home_text: ".."               
   date_format: "%Y-%m-%d"
   show_description: false
 
@@ -44,15 +34,11 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# --- Collections ----------------------------------------------
-# Each project is one markdown file in _projects/
 collections:
   projects:
     output: true
     permalink: /projects/:name/
 
-# --- Front-matter defaults ------------------------------------
-# So you don't have to repeat `layout:` in every single file.
 defaults:
   - scope: { path: "", type: "posts" }
     values: { layout: "post" }
@@ -61,10 +47,8 @@ defaults:
   - scope: { path: "" }
     values: { layout: "page" }
 
-# --- Post URLs ------------------------------------------------
 permalink: /writing/:year/:month/:day/:title/
 
-# --- Markdown -------------------------------------------------
 markdown: kramdown
 kramdown:
   input: GFM

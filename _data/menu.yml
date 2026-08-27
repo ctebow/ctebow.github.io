@@ -9,3 +9,5 @@ entries:
     url: /writing/
   - title: cv
     url: /assets/resume.pdf
+  - title: courses
+    url: /courses/

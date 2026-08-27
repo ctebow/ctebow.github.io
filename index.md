@@ -3,22 +3,20 @@ title: Caden Tebow
 hide_title: true
 ---
 
-Short intro paragraph — one or two sentences on who you are and what you
-work on. This is the first thing a visitor reads, so keep it concrete.
+Hello! I'm currently a third year student at the University of Chicago 
+who just finished a summer at the energetic particle laboratory at NASA Goddard. 
+I'm really interested in commercial aerospace, scientific instrumentation, and electronics, and I've
+been lucky enough to work on some super cool projects that I talk about
+on this website. 
 
-## Selected projects
+### My Projects
+Here are some things I've worked on in the past, including...
+- A custom simulation pipeline for a neutron spectrometer
+- The calibration of a MEMS Fast Steering Mirror for a CubeSat optical payload
+- Designing and Manufacturing a custom PCB for a distance sensor
+- Training a CNN to identify drawn circuit diagrams
+- Planning a 150+ person boat formal ;)
 
 {% include project_list.html limit=3 %}
 
 [all projects &rarr;]({{ '/projects/' | relative_url }})
-
-## Recent writing
-
-<ul class="listing">
-  {% for post in site.posts limit: 3 %}
-    <li>
-      <span class="fine">{{ post.date | date: site.theme_config.date_format }}</span>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
