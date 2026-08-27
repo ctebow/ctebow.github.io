@@ -20,6 +20,9 @@ nDURE "sees", and I used simulations to model nDURE's detector effects while als
 ways to "unfold" detector errors from measured data in order to give scientists an
 effective way to interpret the radiation readings that nDURE will provide. 
 
+A beam of neutrons passing through my nDURE model:
+![A render of nDURE](/assets/img/ndure_render.png)
+
 ### Technical Details
 
 Using GEANT-4, C++, ROOT, and Python with NumPy and Pandas, I built an end-to-end 
@@ -28,25 +31,34 @@ instrument and recover a poisson-smeared, statistically honest distribution of e
 reconstructed by the detector. I then conducted analysis on the energy resolution, efficiency, and 
 unfolding capbailities of the nDURE instrument using the simulation pipeline. 
 
-Here is a diagram of the pipeline:
-
+The simulation pipeline:
 ![A Diagram of the nDURE simulation pipeline](/assets/img/ndure-diagram.png)
 
-GEANT-4 is a package provided by CERN to simulate the passage of particles through matter
-using monte-carlo techniques. Using the package, I set up my detector geometry, defined what
-constitutes as an "event", a "hit", and what should be reconstructed (essentially what data goes out of the simulation),
-while also allowing for user I/O. 
+Key features of this project include...
+- A custom GEANT-4 mass model and simulation routine for the nDURE instrument that 
+implements Birks's quenching for particles in a plastic scintillator. 
+- A JSON-driven simulation harness that allows for parallel, batched simulation runs and 
+on-the-fly input energy calculation using Python.
+- A configurable simulation parser that allows for custom energy reconstruction, tunable smearing parameters, and output into 
+.root or .csv format with PyRoot. 
+- Analysis and data unfolding using CERN's rooUnfold to characterize detector energy resolution,
+peak separation, and unfolding performance. 
 
-```python
-def solve(xs):
-    return sum(x * x for x in xs)
-```
+### Key Results
+
+I used the pipeline I built to compare two separate detectors in their unfolding capability, 
+finding that the nDURE instrument out-performs a comparable single-scatter neutron spectrometer.
+
+![An image of the nDURE results](/assets/img/across_spectra_grid.png)
+
+
+
 
 ### Presentations and Publications
 
-I presented my research to the heliophysics division at NASA Goddard, which can be viewed here.
+I presented my research to the heliophysics division at NASA Goddard, which can be viewed [here](/assets/img/Tebow_Caden_HSD_Presentation_Slides.pdf).
 
-I presented a poster at the NASA Student Research Symposium in August 2026, which can be viewed here.
+I presented a poster at the NASA Student Research Symposium in August 2026, which can be viewed [here](/assets/img/2026%20NASA%20Intern%20Poster%20Session%20DRAFT%202%20(2).pdf).
 
 I'm currently submitting a paper along with my advisor and research partner, which once submitted will be available here. 
 

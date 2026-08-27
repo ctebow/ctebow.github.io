@@ -1,5 +1,5 @@
 ---
-title: Boat Formal
+title: Planning a Boat Formal
 date: 2026-01-01                    # used for ordering (newest first)
 blurb: Organized a 150+ person boat formal for my tech frat.
 tags:

@@ -9,8 +9,7 @@ I'm really interested in commercial aerospace, scientific instrumentation, and e
 been lucky enough to work on some super cool projects that I talk about
 on this website. 
 
-### Headshot
-![A headshot of me](/assets/img/headshot.png)
+### [Headshot](/headshot/)
 
 ### My Projects
 Here are some things I've worked on in the past, including...
