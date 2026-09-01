@@ -3,7 +3,7 @@ title: Simulating a Neutron Spectrometer
 date: 2026-08-01                      # used for ordering (newest first)
 blurb: Using GEANT-4 to simulate and characterize NASA's Neutron Dosimeter for Unkown Radiation Environments.
 tags:
-repo: https://github.com/ctebow/example
+repo:
 link:                                 # optional live demo URL
 image:                                # optional, e.g. /assets/img/example.png
 featured: true
