@@ -67,8 +67,10 @@ also running into a ton of roadblocks. Just to name a few roadblocks...
 as my notion of what counted as a "hit" in my detector, how to organize my .root files, and what 
 events to write down constantly got mixed up and made analysis of the physics difficult. 
 - Space and time complexity! Very quickly, my simulation outputs approached gigabytes in size, and my
-simulations became so lengthy I had to run them overnight. As a solution, I came up with strategic ways to parallelize runs, 
-cut down on wastful simulations, and drastically reduce which events I was tracking. 
+simulations became so lengthy I had to run them overnight. To fix these issues I developed a hardness to run 
+several simulations in parallel, and I used a boostrap process that allowed me to run a simulation once and 
+then use statistical smearing to generate mock data in seconds instead of hours of simulation. I also was forced to
+be clever about which events I recorded after simulation, allowing me to drastically cut down on output size. 
 - The underlying physics! There is some super cool (and also very confusing) math and quantum mechanics
 behind how incident neutrons eventually get detected by nDURE, and it tooks me weeks of reading textbooks, papers, 
 and my lab group's past work to begin to feel comfortable. 

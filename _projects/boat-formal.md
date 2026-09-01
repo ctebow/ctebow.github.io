@@ -21,5 +21,3 @@ Lake Michigan, cover guest transportation, and provide dinner and drinks.
 secured mid-event photography services months in advance. 
 - Had an awesome time with my friends on Lake Michigan!!!
 
-### (Not-So) Technical Documentation
-
