@@ -9,6 +9,9 @@ image:                                # optional, e.g. /assets/img/example.png
 featured: true
 ---
 
+[presentation](/assets/img/Tebow_Caden_HSD_Presentation_Slides.pdf)
+[poster](/assets/img/2026%20NASA%20Intern%20Poster%20Session%20DRAFT%202%20(2).pdf)
+
 ### Background
 
 Neutrons make up about 20% of expected radiation dosages on the lunar and
