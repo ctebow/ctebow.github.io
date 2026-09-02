@@ -6,7 +6,7 @@ entries:
   - title: projects
     url: /projects/
   - title: cv
-    url: /assets/resume.pdf
+    url: https://ctebow.github.io/Resume/
   - title: courses
     url: /courses/
   - title: headshot
