@@ -3,13 +3,13 @@ title: Caden Tebow
 hide_title: true
 ---
 
+## Portfolio
+
 Hello! I'm currently a third year student at the University of Chicago 
 who just finished a summer at the energetic particle laboratory at NASA Goddard. 
 I'm really interested in commercial aerospace, scientific instrumentation, and electronics, and I've
 been lucky enough to work on some super cool projects that I talk about
 on this website. 
-
-### [Headshot](/headshot/)
 
 ### My Projects
 Here are some things I've worked on in the past, including...
