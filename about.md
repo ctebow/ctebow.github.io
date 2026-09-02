@@ -24,3 +24,4 @@ I played cello in the UChicago chamber orchestra, I'm really into both playing a
 - [GitHub](https://github.com/{{ site.github_username }})
 - [Email](mailto:{{ site.email }})
 - [LinkedIn](https://www.linkedin.com/in/caden-tebow-233368297/?skipRedirect=true)
+- [YouTube](https://www.youtube.com/@cadentebow)
