@@ -43,7 +43,7 @@ includes user methods for FSM setup, slewing to a voltage on a single axis, stat
 shutdown. Below is one of the first testing setups, with the rasperry pi serving as a
 stand-in for the actual satellite beaglebone flight computer. 
 
-![An image of the first FSM testing setup](/assets/img/fsm_setup.png)
+<img class="photo" src="/assets/img/fsm_setup.png" alt="An image of the first FSM testing setup">
 
 #### FSM Characterization
 For proper operation, the voltage response of the FSM had to be characterized in order 

@@ -42,7 +42,8 @@ Below is an image of the fully built PCB
 ![Image of the built distance logging PCB](/assets/img/xm125-front.jpg)
 
 And here is a pretty unconventional testing setup to mock the sensor in a borehole
-![Image of distance logger in a PVC tube](/assets/img/pcb_setup.png)
+
+<img class="photo" src="/assets/img/pcb_setup.png" alt="Image of distance logger in pvc tube">
 
 ### Comments and Improvements
 

@@ -52,6 +52,13 @@ a:hover { background: $accent; color: $background; }
   li { margin-bottom: 1rem; }
 }
 
+.photo {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
 img { max-width: 100%; height: auto; }
 
 pre, code { font-size: .9rem; }
